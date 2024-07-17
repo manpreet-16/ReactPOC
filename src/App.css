@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fafafa;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: hsl(0, 12%, 90%);
+    color: #fff;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #EFA127;
+}
+
+#sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #EFA127;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    color: #EFA127;
+    background: #fff;
+}
+
+#sidebar ul li.active>a,
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul.CTAs {
+    padding: 20px;
+}
+
+ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+a{
+  text-decoration: none;
+}
+html,
+body{
+  background: #5B5B5C;
+  height: 100%;
+  font-family: 'Montserrat','Arial',sans-serif;
+  color: #636363;
+}
+
+.card-body h1{
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+  margin-bottom: 8px;
+  color: #636363;
+  
+  & a{
+  color: #636363;
+  }
+}
+
+
+.featured-listings{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.restaurant-card{
+  background: #fff;
+  width: 320px;
+  height: 300px;
+  border-radius: 10px;
+  text-align: center;
+  -webkit-box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+  -moz-box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+  box-shadow: 0px 15px 88px -37px rgba(0,0,0,0.17);
+  overflow: hidden;
+}
+
+.card-header{
+  height: 50%;
+  background: #000 url(http://res.cloudinary.com/jenelle-miller/image/upload/v1518632582/tupelo-cafe_a7buc9.png) center no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.favorite-btn{
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  position: relative;
+  top: 124px;
+  left: 24px;
+  border: 2px solid #fff;
+  background: #F22F59;
+  padding-top: 15px;
+  text-align: center;
+  vertical-align: center;
+  transition: .3s;
+  
+  &:hover{
+    background: saturate(#F22F59,25%);
+    cursor: pointer;
+  }
+}
+
+.card-body{
+  padding: 24px;
+  font-family: 'Lato','Arial',sans-serif;
+  font-size: .9rem;
+  
+}
+
+.rating ul{
+  padding: 10px;
+}
+.rating li{
+  display: inline;
+  color: #EFA127;
+  &:hover{
+    color: saturate(#EFA127,25%);
+    cursor: pointer;
+  }
+}
+
+.form-container {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: orange;
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-row label {
+  width: 30%;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.form-input {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  border-radius: 4px;
+  background-color: #fff;
+  color: orange;
+  font-size: 16px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #ff6347;
+  box-shadow: 0px 0px 4px rgba(255, 99, 71, 0.5);
+}
+
+.form-link {
+  color: orange;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.form-link:hover {
+  text-decoration: underline;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: orange;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #ff6347;
+}
+
+
+body{background-color:#FFEBEE}.card{width:400px;background-color:#fff;border:none;border-radius: 12px}label.radio{cursor: pointer;width: 100%}label.radio input{position: absolute;top: 0;left: 0;visibility: hidden;pointer-events: none}label.radio span{padding: 7px 14px;border: 2px solid #eee;display: inline-block;color: #039be5;border-radius: 10px;width: 100%;height: 48px;line-height: 27px}label.radio input:checked+span{border-color: #039BE5;background-color: #81D4FA;color: #fff;border-radius: 9px;height: 48px;line-height: 27px}.form-control{margin-top: 10px;height: 48px;border: 2px solid #eee;border-radius: 10px}.form-control:focus{box-shadow: none;border: 2px solid #039BE5}.agree-text{font-size: 12px}.terms{font-size: 12px;text-decoration: none;color: #039BE5}.confirm-button{height: 50px;border-radius: 10px}
